@@ -1,10 +1,17 @@
 # LifeCycle Investigation Project
 
+## Introduction
+
 LF (standing for LifeCycle) is an attempt to get a better
 understanding of the lifecycle of pages and components that is, in
 which order they are run, where (server or client) they are run, etc.
 
+The rest of this README is the original README of the Sapper
+sample app.
 
+## Conclusion
+
+to be done...
 
 
 

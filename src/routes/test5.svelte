@@ -1,22 +1,20 @@
 <div>
   <h2>Test {test} (with components)</h2>
   <p>
-    This page shows how code within a script element is run on the
-    server and on the client. Several components also appear.
+    This page is a variation of test4: the order of importations
+    (Widget2 is imported before Widget1) is modified without
+    consequences. The order of evaluation is the same and follows the
+    order of components in the HTML section.
   </p>
 
-  <p>
-    This is a variation of test4: the order of importations is modified
-    without consequences. The order of evaluation is the same and follows
-    the order of components in the HTML section.
-  </p>
-
-  <Widget1 bind:test={test} />
-  <Widget2 bind:test={test} />
+  <div class='border'>
+    <Widget1 bind:test={test} />
+    <Widget2 bind:test={test} />
+  </div>
 
   <center>
     <button><a href='test4'>previous test</a></button>
-    <button style='margin-bottom: 2em'><a href='test6'>next test</a></button>
+    <button><a href='test6'>next test</a></button>
   </center>
 
   <table>
@@ -50,6 +48,13 @@ Test#5 - Running onMount on client
 Test#5 - Running afterUpdate on client
 
   </pre></td></tr></table>
+
+  <h2>Conclusion</h2>
+  <p>
+    The evaluation order does not depend on the order of importations but
+    on their order in the HTML part. Here, Widget1 appears before
+    Widget2.
+  </p>
 
 </div>
 

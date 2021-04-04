@@ -9,13 +9,15 @@
   We see that the code of the script element of the current page is run
   then the components start loading and everything is interlaced.
   Indentation in the client column is mine to help understand the
-  order of operations. Note that included components are fully loaded
+  order of operations. Note that included components are completely loaded
   (that is no more code is run) before the including component (or page)
-  is fully loaded.
+  is completely loaded.
   </p>
 
-  <Widget1 bind:test={test} />
-  <Widget2 bind:test={test} />
+  <div class='border'>
+    <Widget1 bind:test={test} />
+    <Widget2 bind:test={test} />
+  </div>
 
   <center>
     <button><a href='test3'>previous test</a></button>
@@ -53,6 +55,13 @@ Test#4 - Running onMount on client
 Test#4 - Running afterUpdate on client
 
   </pre></td></tr></table>
+
+  <h2>Conclusion</h2>
+  <p>
+    The evaluation order is respected but if code and beforeUpdate are
+    run in sequence, onMount and afterUpdate are run after the
+    corresponding HTML is generated.
+  </p>
 
 </div>
 

@@ -1,7 +1,7 @@
 <div>
-  Inclusion begins here:
+  Inclusion begins here [
   <slot></slot>
-  and is now stopped.
+  ] and ends here.
 </div>
 
 <script>

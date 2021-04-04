@@ -48,7 +48,7 @@ Test#3 - Running afterUpdate on client
   <h2>Conclusion</h2>
   <p>
     The order of evaluation is fixed: first the code is run, then the
-    various lifecycle functions are run. More on this on next tests...
+    various lifecycle functions are invoked. More on this on next tests...
   </p>
 
 </div>

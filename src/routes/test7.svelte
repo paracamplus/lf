@@ -1,20 +1,17 @@
 <div>
   <h2>Test {test} (with unused component)</h2>
   <p>
-    This page shows how code within a script element is run on the
-    server and on the client. Several components also appear.
+    This page imports Widget3 but does not use it so its code will not run.
   </p>
 
-  <p>
-  Here we import Widget3 but we do not use it so its code will not run.
-  </p>
-
-  <Widget2 bind:test={test} />
-  <Widget1 bind:test={test} />
+  <div class='border'>
+    <Widget2 bind:test={test} />
+    <Widget1 bind:test={test} />
+  </div>
 
   <center>
     <button><a href='test6'>previous test</a></button>
-    <button style='margin-bottom: 2em'><a href='test8'>next test</a></button>
+    <button><a href='test8'>next test</a></button>
   </center>
 
   <table>
@@ -48,6 +45,12 @@ Test#7 - Running onMount on client
 Test#7 - Running afterUpdate on client
 
   </pre></td></tr></table>
+
+  <h2>Conclusion</h2>
+  <p>
+    Imported but unused components do not perturb the evaluation order
+    of used components.
+  </p>
 
 </div>
 

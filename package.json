@@ -1,6 +1,6 @@
 {
-  "name": "TODO",
-  "description": "TODO",
+  "name": "LF",
+  "description": "Tests to understand Svelte/Sapper evaluation order",
   "version": "0.0.1",
   "scripts": {
     "dev": "sapper dev",

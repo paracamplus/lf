@@ -1,23 +1,19 @@
 <div>
   <h2>Test {test} (with wrapper component)</h2>
   <p>
-    This page shows how code within a script element is run on the
-    server and on the client. Several components also appear, one of
-    them wrapped within another.
+    This page uses several components, one of them wraps another one.
+    Indentation in the client output is mine.
   </p>
 
-  <p>
-    Here we wrap a widget within another widget. Indentation in the
-    client output is mine.
-  </p>
-
-  <WidgetWrapper bind:test={test} >
-    <Widget2 bind:test={test} />
-  </WidgetWrapper>
+  <div class='border'>
+    <WidgetWrapper bind:test={test} >
+      <Widget2 bind:test={test} />
+    </WidgetWrapper>
+  </div>
 
   <center>
     <button><a href='test7'>previous test</a></button>
-    <button style='margin-bottom: 2em'><a href='test9'>next test</a></button>
+    <!--button><a href='test9'>next test</a></button-->
   </center>
 
   <table>
@@ -46,6 +42,12 @@ Test#8 - Running onMount on client
 Test#8 - Running afterUpdate on client
 
   </pre></td></tr></table>
+
+  <h2>Conclusion</h2>
+  <p>
+    Code of inner components is run between beforeUpdate and onMount
+    of the wrapping component.    
+  </p>
 
 </div>
 

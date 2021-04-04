@@ -6,8 +6,8 @@
     (and thus ask the server to regenerate that page) the script
     context module is not run again on the server but only on the
     client. In fact, the script context module was run while launching
-    the server on tests: this is the <code>Test#2</code> line
-    that appears in the previous test.
+    the server: this is why the <code>Test#2</code> line
+    appears in the previous page.
   </p>
   
   <p>
@@ -49,7 +49,7 @@ Test#2 - And now, I am running on client.
   <p>
     It is important to distinguish reloading a page (that is, ask the
     server to regenerate the page) from following links (that are
-    processed by the client).
+    entirely processed by the client).
   </p>
 
 </div>

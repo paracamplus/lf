@@ -7,37 +7,49 @@
   </p>
 
   <p>
-    If you return to test2, you will see that the script context
-    module is not run again on the server. In fact, the script element
-    is also not re-run on the server.
-  </p>
-  
-  <p>
-    To see it, look at the output of the server and at the browser
-    console. You should see (after reloading this page):
+    When this page is displayed, the output of the server and the Web
+    console should look like:
   </p>
   
   <center>
     <button><a href='test2'>previous test</a></button>
-    <button style='margin-bottom: 2em'><a href='test4'>next test</a></button>
+    <button><a href='test4'>next test</a></button>
   </center>
 
   <table>
   <tr><th>server</th><th>client</th></tr>
   <tr><td><pre>
-
+&nbsp;
+      <em>reload page</em>
 Test#3 - I am running on server.
+      <em>return to previous test then next test</em>
 
   </pre></td>
 
-  <td><pre style='margin-left: 2em;'>
+  <td><pre>
     
+Test#3 - I am running on client.
+Test#3 - Running beforeUpdate on client 
+Test#3 - Running onMount on client
+Test#3 - Running afterUpdate on client
+     <em>reload page</em>
+Test#3 - I am running on client.
+Test#3 - Running beforeUpdate on client 
+Test#3 - Running onMount on client
+Test#3 - Running afterUpdate on client
+      <em>return to previous test then next test</em>
 Test#3 - I am running on client.
 Test#3 - Running beforeUpdate on client 
 Test#3 - Running onMount on client
 Test#3 - Running afterUpdate on client
 
   </pre></td></tr></table>
+
+  <h2>Conclusion</h2>
+  <p>
+    The order of evaluation is fixed: first the code is run, then the
+    various lifecycle functions are run. More on this on next tests...
+  </p>
 
 </div>
 

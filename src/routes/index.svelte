@@ -1,7 +1,7 @@
 <div>
   <h2>Tests</h2>
   <p>
-    To run these tests and understand what they mean, I use the following
+    To run these tests and analyze them, I use the following
     setup.
   </p>
   <ul>

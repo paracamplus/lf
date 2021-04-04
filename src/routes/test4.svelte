@@ -2,7 +2,7 @@
   <h2>Test {test} (with components)</h2>
   <p>
     This page shows how code within a script element is run on the
-    server and on the client. Several components also appear.
+    server and on the client in presence of several components.
   </p>
 
   <p>
@@ -19,7 +19,7 @@
 
   <center>
     <button><a href='test3'>previous test</a></button>
-    <button style='margin-bottom: 2em'><a href='test5'>next test</a></button>
+    <button><a href='test5'>next test</a></button>
   </center>
 
   <table>
@@ -33,7 +33,7 @@ Test#4 Widget#2/page - I am running on server.
 
   </pre></td>
 
-  <td><pre style='margin-left: 2em;'>
+  <td><pre>
     
 Test#4 - I am running on client. 
 Test#4 - Running beforeUpdate on client 

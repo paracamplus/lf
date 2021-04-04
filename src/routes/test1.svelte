@@ -1,17 +1,19 @@
 <div>
   <h2>Test {test} (single script element)</h2>
   <p>
-    This page shows that code within a script element is run on the
-    server and on the client. Ignore the <code>Test#2</code> line for now!
+    This page shows that code within a script element is (at first)
+    run on the server and on the client.
+    Ignore the <code>Test#2</code> line for now!
   </p>
   
   <p>
-    To see it, look at the output of the server and at the browser
-    console. You should see:
+    When this page is displayed, the output of the server and the Web
+    console should look like:
   </p>
 
   <center>
-    <button style='margin-bottom: 2em'><a href='test2'>next test</a></button>
+    <button><a href='/'>start page</a></button>
+    <button><a href='test2'>next test</a></button>
   </center>
 
   <table>
@@ -23,14 +25,23 @@
 ✔ server (2.3s)
 ✔ client (2.3s)
 ✔ service worker (40ms)
-Test#2 - I am running on server.
+Test#2/context - I am running on server.
 > Listening on http://localhost:3000
 Test#1 - I am running on server.
   </pre></td>
 
-  <td><pre style='margin-left: 2em;'>
+  <td><pre>
 Test#1 - I am running on client.
   </pre></td></tr></table>
+
+  <h2>Conclusion</h2>
+  <p>
+    When the page is loaded, code runs on both side but, return to
+    `start page` (with the button) then back again to `first test`.
+    Only client code is re-run. Server code is only run when the page
+    is initially or re-loaded that is, when requested from the server.
+    The `start page` button is processed on the client only.
+  </p>
   
 </div>
 

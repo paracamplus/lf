@@ -1,0 +1,17 @@
+table {
+    margin: 1em auto;
+    border: solid 1px grey;
+}
+table th {
+    background-color: black;
+    color: white;
+}
+button {
+    margin-bottom: 2ex;
+}
+button a {
+    text-decoration: none;
+}
+pre em {
+    color: red;
+}

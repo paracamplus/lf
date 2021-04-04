@@ -1,5 +1,5 @@
 <span>
-  I am widget2 called from {from}.
+  I am <code>widget{widget}</code> called from {from}.
 </span>
 
 <script>

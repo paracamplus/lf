@@ -40,10 +40,10 @@ Test#6 - Running beforeUpdate on client
   Test#6 Widget#1 - Running beforeUpdate on client 
     Test#6 Widget#2/widget1 - I am running on client. 
     Test#6 Widget#2/widget1 - Running beforeUpdate on client 
-    Test#6 Widget#2/widget1 - Running onMount on client 
-    Test#6 Widget#2/widget1 - Running afterUpdate on client 
   Test#6 Widget#2/page - Running onMount on client
   Test#6 Widget#2/page - Running afterUpdate on client
+    Test#6 Widget#2/widget1 - Running onMount on client 
+    Test#6 Widget#2/widget1 - Running afterUpdate on client 
   Test#6 Widget#1 - Running onMount on client
   Test#6 Widget#1 - Running afterUpdate on client
 Test#6 - Running onMount on client 

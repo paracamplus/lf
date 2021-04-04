@@ -1,12 +1,14 @@
-<p> I am <code>widget{widget}</code> and here is widget2:
-  <Widget2 from='widget1' bind:test={test}/></p>
+<div>
+  Inclusion begins here:
+  <slot></slot>
+  and is now stopped.
+</div>
 
 <script>
- import Widget2 from '../components/Widget2.svelte';
- import * as utils from '../common/utils.mjs';
  import { onMount, beforeUpdate, afterUpdate } from 'svelte';
+ import * as utils from '../common/utils.mjs';
  export let test;
- let widget = 1;
+ let widget = 'wrapper';
 
  console.log(`Test#${test} Widget#${widget} - I am running on ${utils.whereAmI()}.`);
 
@@ -21,4 +23,5 @@
  afterUpdate(() => {
    console.log(`Test#${test} Widget#${widget} - Running afterUpdate on ${utils.whereAmI()}`);
  });
+
 </script>

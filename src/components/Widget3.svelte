@@ -1,12 +1,10 @@
-<p> I am <code>widget{widget}</code> and here is widget2:
-  <Widget2 from='widget1' bind:test={test}/></p>
+<p> This is <code>widget{widget}</code>.</p>
 
 <script>
- import Widget2 from '../components/Widget2.svelte';
  import * as utils from '../common/utils.mjs';
  import { onMount, beforeUpdate, afterUpdate } from 'svelte';
  export let test;
- let widget = 1;
+ let widget = 3;
 
  console.log(`Test#${test} Widget#${widget} - I am running on ${utils.whereAmI()}.`);
 

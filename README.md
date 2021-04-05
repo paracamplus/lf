@@ -13,7 +13,10 @@ others.
 
 ## Results
 
-You may run, see and analyze these experiments on 
+The best way to run, see and analyze these experiments is to clone the
+repository and run the server so you may be able to look at the output
+produced by the server and the client. However, you may ignore the 
+server and concentrate on the sole client with 
 [https://paracamplus.github.io/lf/](https://paracamplus.github.io/lf/index.html)
 
 ## Extending LF

@@ -1,4 +1,4 @@
-# Time-stamp: "2021-04-05 15:02:35 queinnec"
+# Time-stamp: "2021-04-05 15:19:15 queinnec"
 
 work : nothing 
 clean :: cleanMakefile
@@ -13,7 +13,7 @@ publish :
 	git status .
 	git commit -m "Before deployment on $$(date -u +%Y%m%d_%H%M%S)" .
 	git push
-	npm run export
+	./node_modules/.bin/sapper --basepath lf/ export --legacy
 # npx serve __sapper__/export
 # delete old branch deployed if existing:
 #	-git branch -D deployed
@@ -21,7 +21,8 @@ publish :
 	-git branch deployed
 	git checkout deployed
 	git pull origin deployed
-	git merge main && git status .
+	git merge -m "Automatic reset" main
+	git status .
 	rm -rf docs && mv __sapper__/export ./docs
 	git add docs
 	git commit -m "Deployed on $$(date -u +%Y%m%d_%H%M%S)" .

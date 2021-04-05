@@ -20,7 +20,7 @@
     <li>
       an editor to look at the source of the tests. You may
       alternately browse the
-      [GitHub repository](https://github.com/paracamplus/lf).
+      <a href='https://github.com/paracamplus/lf'>GitHub repository</a>.
     </li>
   </ul>
 

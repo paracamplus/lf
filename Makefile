@@ -1,4 +1,4 @@
-# Time-stamp: "2021-04-05 15:00:09 queinnec"
+# Time-stamp: "2021-04-05 15:02:35 queinnec"
 
 work : nothing 
 clean :: cleanMakefile
@@ -18,7 +18,8 @@ publish :
 # delete old branch deployed if existing:
 #	-git branch -D deployed
 #	-git push origin --delete deployed
-	git branch deployed && git checkout deployed
+	-git branch deployed
+	git checkout deployed
 	git pull origin deployed
 	git merge main && git status .
 	rm -rf docs && mv __sapper__/export ./docs

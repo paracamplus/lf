@@ -1,4 +1,4 @@
-# Time-stamp: "2021-04-05 14:54:13 queinnec"
+# Time-stamp: "2021-04-05 15:00:09 queinnec"
 
 work : nothing 
 clean :: cleanMakefile
@@ -8,6 +8,7 @@ run.local.dev :
 
 # Static site is deployed on https://paracamplus.github.io/lf/
 # That URL corresponds to the README.md content.
+# GitHub Page setting is branch: deployed, folder: docs/
 publish :
 	git status .
 	git commit -m "Before deployment on $$(date -u +%Y%m%d_%H%M%S)" .
@@ -20,7 +21,7 @@ publish :
 	git branch deployed && git checkout deployed
 	git pull origin deployed
 	git merge main && git status .
-	mv __sapper__/export ./docs
+	rm -rf docs && mv __sapper__/export ./docs
 	git add docs
 	git commit -m "Deployed on $$(date -u +%Y%m%d_%H%M%S)" .
 	git status .

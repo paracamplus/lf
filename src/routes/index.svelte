@@ -1,5 +1,5 @@
 <div>
-  <h2>Tests around evaluation order</h2>
+  <h2>Experiments around evaluation order in Svelte Sapper</h2>
   <p>
     To run these tests and analyze them, I use the following
     setup.
@@ -28,7 +28,7 @@
     <button style='margin-bottom: 2em'><a href='test1'>first test</a></button>
   </center>
   
-  <img width='80%' src='setup.webp' alt='setup'/>
+  <img width='80%' src='./setup.webp' alt='setup'/>
 
 </div>
 

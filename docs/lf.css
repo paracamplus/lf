@@ -1,0 +1,24 @@
+table {
+    margin: 1em auto;
+    border: solid 1px grey;
+}
+table th {
+    background-color: black;
+    color: white;
+}
+button {
+    margin-bottom: 2ex;
+}
+button a {
+    text-decoration: none;
+}
+pre em {
+    color: red;
+}
+div.border {
+    margin-left: 4em;
+    margin-right: 4em;
+    margin-bottom: 1em;
+    padding: 1em;
+    border: dotted 1px black;
+}

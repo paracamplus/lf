@@ -1,0 +1,13 @@
+<!doctype html> <html lang=en> <head> <meta charset=utf-8> <meta content="width=device-width,initial-scale=1" name=viewport> <meta content=#333333 name=theme-color> <base href=/ > <link href=global.css rel=stylesheet> <link href=manifest.json rel=manifest crossorigin=use-credentials> <link href=favicon.png rel=icon type=image/png> <link href=logo-192.png rel=apple-touch-icon> <link href=lf.css rel=stylesheet> <script>__SAPPER__={baseUrl:"",preloaded:[void 0,{}]};if('serviceWorker' in navigator)navigator.serviceWorker.register('/service-worker.js');(function(){try{eval("async function x(){}");var main="/client/client.56c24277.js"}catch(e){main="/client/legacy/client.3dfb36a3.js"};var s=document.createElement("script");try{new Function("if(0)import('')")();s.src=main;s.type="module";s.crossOrigin="use-credentials";}catch(e){s.src="/client/shimport@2.0.4.js";s.setAttribute("data-main",main);}document.head.appendChild(s);}());</script> <link href=client/client-a6ab5402.css rel=stylesheet> <link href=/client/client.56c24277.js rel=modulepreload as=script crossorigin=use-credentials><link href=/client/client-a6ab5402.css rel=preload as=style><link href=/client/test1.ae8345b9.js rel=modulepreload as=script crossorigin=use-credentials><link href=/client/utils.932e656f.js rel=modulepreload as=script crossorigin=use-credentials><link href=/client/inject_styles.5607aec6.js rel=modulepreload as=script crossorigin=use-credentials></head> <body> <div id=sapper> <main class=svelte-1vk44dp><div><h2>Test 1 (single script element)</h2> <p>This page shows that code within a script element is (at first) run on the server and on the client. </p> <p>When this page is displayed, the output of the server and the Web console should look like (but please, ignore the <code>Test#2</code> line for now): </p> <center><button><a href=/ >first page</a></button> <button><a href=test2>next test</a></button></center> <table><tr><th>server<th>client</tr> <tr><td><pre>> LF@0.0.1 dev
+> sapper dev
+
+✔ server (2.3s)
+✔ client (2.3s)
+✔ service worker (40ms)
+Test#2/context - I am running on server.
+> Listening on http://localhost:3000
+Test#1 - I am running on server.
+     <em>return to first page then back here</em></pre></td> <td><pre>Test#1 - I am running on client.
+     <em>return to first page then back here</em>
+Test#1 - I am running on client.
+  </pre></table> <h2>Conclusion</h2> <p>When the page is loaded, code runs on both side but, if you return to `first page` (with the button) then back again to `first test`. Only the client code is re-run. Server code is only run when the page is initially loaded or re-loaded that is, when really requested from the server. The `first page` button is processed on the client only. </p> </div></main></div> 

@@ -1,4 +1,4 @@
-# Time-stamp: "2021-04-05 14:37:28 queinnec"
+# Time-stamp: "2021-04-05 14:54:13 queinnec"
 
 work : nothing 
 clean :: cleanMakefile
@@ -15,10 +15,10 @@ publish :
 	npm run export
 # npx serve __sapper__/export
 # delete old branch deployed if existing:
-	-git branch -D deployed
+#	-git branch -D deployed
 #	-git push origin --delete deployed
 	git branch deployed && git checkout deployed
-	git pull
+	git pull origin deployed
 	git merge main && git status .
 	mv __sapper__/export ./docs
 	git add docs

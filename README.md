@@ -5,15 +5,16 @@
 LF is an attempt to get a better understanding of the evaluation order
 along which the code of pages and components is run in Svelte/Sapper.
 
-However rarely, I encounter some problems to order operations between
-pages and components. They often vanish when refactoring code but,
-this time, I wanted to have a better understanding of the exact order
-of evaluation. Hence this site. I share it since it might help others.
+Though rarely, I sometime encounter problems to order operations
+between pages and components. They often vanish when refactoring code
+but, this time, I wanted to have a better understanding of the exact
+order of evaluation. Hence this site. I share it since it might help
+others.
 
 ## Results
 
 You may run, see and analyze these experiments on 
-[https://paracamplus.github.io/lf/](https://paracamplus.github.io/lf/export/)
+[https://paracamplus.github.io/lf/docs/](https://paracamplus.github.io/lf/docs/)
 
 ## Extending LF
 

@@ -1,8 +1,7 @@
 <div>
   <h2>Experiments around evaluation order in Svelte Sapper</h2>
   <p>
-    To run these tests and analyze them, I use the following
-    setup.
+    To run these tests and analyze them, I use the following setup:
   </p>
   <ul>
     <li>
@@ -25,7 +24,7 @@
   </ul>
 
   <center>
-    <button style='margin-bottom: 2em'><a href='test1'>first test</a></button>
+    <button><a href='test1'>first test</a></button>
   </center>
   
   <img width='80%' src='./setup.webp' alt='setup'/>

@@ -1,4 +1,4 @@
-# Time-stamp: "2021-04-03 16:03:27 queinnec"
+# Time-stamp: "2021-04-05 10:17:03 queinnec"
 
 work : nothing 
 clean :: cleanMakefile
@@ -6,6 +6,7 @@ clean :: cleanMakefile
 run.local.dev :
 	npm run dev
 
+# Static site is deployed on https://paracamplus.github.io/lf/
 
 # ##################################### Once
 

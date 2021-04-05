@@ -14,7 +14,7 @@ others.
 ## Results
 
 You may run, see and analyze these experiments on 
-[https://paracamplus.github.io/lf/docs/](https://paracamplus.github.io/lf/docs/)
+[https://paracamplus.github.io/lf/](https://paracamplus.github.io/lf/index.html)
 
 ## Extending LF
 

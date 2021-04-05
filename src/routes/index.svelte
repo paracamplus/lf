@@ -1,5 +1,5 @@
 <div>
-  <h2>Tests</h2>
+  <h2>Tests around evaluation order</h2>
   <p>
     To run these tests and analyze them, I use the following
     setup.
@@ -18,7 +18,9 @@
       <code>console.log()</code> output produced by client code.
     </li>
     <li>
-      an editor to look at the source of the tests.
+      an editor to look at the source of the tests. You may
+      alternately browse the
+      [GitHub repository](https://github.com/paracamplus/lf).
     </li>
   </ul>
 

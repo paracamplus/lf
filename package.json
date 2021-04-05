@@ -1,6 +1,6 @@
 {
   "name": "LF",
-  "description": "Tests to understand Svelte/Sapper evaluation order",
+  "description": "Svelte Sapper - Evaluation order",
   "version": "0.0.1",
   "scripts": {
     "dev": "sapper dev",

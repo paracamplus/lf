@@ -1,14 +1,17 @@
-# LifeCycle Investigation Project
+# Svelte Sapper - Evaluation order
 
 ## Introduction
 
-LF (standing for LifeCycle) is an attempt to get a better
-understanding of the lifecycle of pages and components that is, in
-which order they are processed, where (server or client) code is run, etc.
+LF is an attempt to get a better understanding of the evaluation order
+along which the code of pages and components is run. 
 
-## Getting started
+## Results
 
-If you want to run these tests, here is a recipe:
+You may analyze the results on https://a/b
+
+## Extending LF
+
+If you want to run and develop these tests, here is a recipe:
 
 ```bash
 git clone https://github.com/paracamplus/lf.git

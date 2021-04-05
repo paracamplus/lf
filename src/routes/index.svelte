@@ -1,6 +1,10 @@
 <div>
   <h2>Experiments around evaluation order in Svelte Sapper</h2>
   <p>
+    Code is available on <a href='https://github.com/paracamplus/lf'>GitHub</a>.
+  </p>
+  
+  <p>
     To run these tests and analyze them, I use the following setup:
   </p>
   <ul>

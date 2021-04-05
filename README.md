@@ -5,23 +5,18 @@
 LF is an attempt to get a better understanding of the evaluation order
 along which the code of pages and components is run in Svelte/Sapper.
 
-Though rarely, I sometime encounter problems to order operations
-between pages and components. They often vanish when refactoring code
-but, this time, I wanted to have a better understanding of the exact
-order of evaluation. Hence this site. I share it since it might help
-others.
+Though rarely, I sometime encounter problems to get the appropriate
+order of operations between pages and components. These problems often
+vanish when refactoring code but, this time, I wanted to have a better
+understanding of the exact order of evaluation. Hence this site. I
+share it since it might help others.
 
 ## Results
 
 The best way to run, see and analyze these experiments is to clone the
-repository and run the server so you may be able to look at the output
-produced by the server and the client. However, you may ignore the 
-server and concentrate on the sole client with 
-[https://paracamplus.github.io/lf/](https://paracamplus.github.io/lf/index.html)
-
-## Extending LF
-
-If you want to run and develop these tests, here is a recipe:
+repository and run the server so you may be able to look, at the same
+time, at the output produced by the server and the client. Here is a
+recipe:
 
 ```bash
 git clone https://github.com/paracamplus/lf.git
@@ -46,7 +41,7 @@ onMount(...)
 afterUpdate(...)
 ```
 
-And these are the four steps of the evaluation order:
+There are four steps in the evaluation order:
 
 - `code` is run and arguments of the [lifecycle functions](https://svelte.dev/docs#Run_time) are registered. 
 - The functional argument of `beforeUpdate` will then be invoked immediately.

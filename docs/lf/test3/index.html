@@ -1,0 +1,19 @@
+<!doctype html> <html lang=en> <head> <meta charset=utf-8> <meta content="width=device-width,initial-scale=1" name=viewport> <meta content=#333333 name=theme-color> <base href=/lf// > <link href=global.css rel=stylesheet> <link href=manifest.json rel=manifest crossorigin=use-credentials> <link href=lf.css rel=stylesheet> <script>__SAPPER__={baseUrl:"/lf/",preloaded:[void 0,{}]};if('serviceWorker' in navigator)navigator.serviceWorker.register('/lf//service-worker.js');(function(){try{eval("async function x(){}");var main="/lf//client/client.56c24277.js"}catch(e){main="/lf//client/legacy/client.3dfb36a3.js"};var s=document.createElement("script");try{new Function("if(0)import('')")();s.src=main;s.type="module";s.crossOrigin="use-credentials";}catch(e){s.src="/lf//client/shimport@2.0.4.js";s.setAttribute("data-main",main);}document.head.appendChild(s);}());</script> <link href=client/client-a6ab5402.css rel=stylesheet> <link href=/lf//client/client.56c24277.js rel=modulepreload as=script crossorigin=use-credentials><link href=/lf//client/client-a6ab5402.css rel=preload as=style><link href=/lf//client/test3.e39f3de8.js rel=modulepreload as=script crossorigin=use-credentials><link href=/lf//client/utils.932e656f.js rel=modulepreload as=script crossorigin=use-credentials><link href=/lf//client/inject_styles.5607aec6.js rel=modulepreload as=script crossorigin=use-credentials></head> <body> <div id=sapper> <main class=svelte-1vk44dp><div><h2>Test 3 (beforeUpdate, onMount, afterUpdate)</h2> <p>This page shows how code within a script element is run on the server and on the client while, on the client, several lifecycle functions are additionally run on the client along a precise order. </p> <p>When this page is displayed, the output of the server and the Web console should look like: </p> <center><button><a href=test2>previous test</a></button> <button><a href=test4>next test</a></button></center> <table><tr><th>server<th>client</tr> <tr><td><pre> 
+      <em>reload page</em>
+Test#3 - I am running on server.
+      <em>return to previous test then next test</em></pre></td> <td><pre>Test#3 - I am running on client.
+Test#3 - Running beforeUpdate on client 
+Test#3 - Running onMount on client
+Test#3 - Running afterUpdate on client
+     <em>reload page</em>
+Test#3 - I am running on client.
+Test#3 - Running beforeUpdate on client 
+Test#3 - Running onMount on client
+Test#3 - Running afterUpdate on client
+      <em>return to previous test then next test</em>
+Test#3 - I am running on client.
+Test#3 - Running beforeUpdate on client 
+Test#3 - Running onMount on client
+Test#3 - Running afterUpdate on client
+
+  </pre></table> <h2>Conclusion</h2> <p>The order of evaluation is fixed: first the code is run, then the various lifecycle functions are invoked. More on this on next tests... </p> </div></main></div> 

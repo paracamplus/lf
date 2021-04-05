@@ -1,4 +1,4 @@
-# Time-stamp: "2021-04-05 14:29:20 queinnec"
+# Time-stamp: "2021-04-05 14:35:31 queinnec"
 
 work : nothing 
 clean :: cleanMakefile
@@ -11,10 +11,12 @@ run.local.dev :
 publish :
 	git status .
 	git commit -m "Before deployment on $$(date -u +%Y%m%d_%H%M%S)" .
+	git push
 	npm run export
 # npx serve __sapper__/export
 # delete old branch deployed if existing:
 	-git branch -D deployed
+	-git push origin --delete deployed
 	git branch deployed && git checkout deployed && \
 		git merge main && git status .
 	mv __sapper__/export ./docs
